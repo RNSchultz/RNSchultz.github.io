@@ -1,25 +1,683 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<link href="https://fonts.googleapis.com/css?family=Oswald:300|Roboto:300" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet"> 
+<title>Rebecca N. Schultz | Project Manager </title>
 <style>
-  html,body,h1,h2,p{margin:0;padding:0;font-weight: 300;}
-  body{background-color:#f7f7f7;color:#707070;}
-  h1{font-size:200%;
-    font-family:'Oswald', sans-serif;
-    margin-top:32px;
-    margin-left:16px;
+  html {
+    margin: 0px;
+    padding: 0px;
   }
-  h2,p{
-    font-size:100%;
+  body {
+    box-sizing: border-box;
+    color: #9A9A9A;
+    background: #EAE8E8;
     font-family: 'Roboto', sans-serif;
-    margin-left:16px;
+    font-size:1.1em;
+    scroll-behavior: smooth;
   }
-  p{
-    font-size:80%;
-    margin-top:80px;
+  .masthead {
+    margin:0px;
+    padding:0px;
   }
+
+  .wrapper {
+    margin: 40px auto;
+    padding: 10px 40px;
+    background-color: #EAE8E8;
+    max-width: 1024px;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-top:10px;
+  }
+  h2 {
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color:#707070;
+    margin-top: 0px;
+    margin-bottom: 6px;
+  }
+  .darken {
+    color: #222;
+  }
+  h4 {
+    font-size: 18px;
+    font-weight: 100;
+    color:#333333;
+  }
+  h5 {
+    font-size: 1em;
+    font-weight: 100;
+    color:#333333;
+    margin-top: 6px;
+    margin-bottom: 36px;
+  }
+  ul {
+    list-style: none;
+  }
+  .masthead {
+    background-color: #ffffff;
+    color: #222222;
+    font-family: Oswald;
+    font-weight: 100;
+
+    margin: 0px;
+    padding: 20px;
+    padding-left: 40px;
+    height: 60px;
+  }
+  .masthead h1 {
+    font-size: 1.5em;
+  }
+  .masthead h2 {
+    font-size: 0.75em;
+  }
+  .top {
+    margin-bottom:0;
+  }
+  p {
+    margin: 0 0 20px 0;  
+  }
+  .multi { 
+  column-count: 1;
+  }
+  img {
+    width: 100%;
+  }
+  @media screen and (min-width: 520px) {
+    .multi { 
+    column-count: 2;
+    }
+  }
+  @media screen and (min-width: 769px) {
+    .multi { 
+      column-count: 3;
+    }
+  }
+  #red {
+    color: #DD1C25; /*red*/
+  }
+  .bottomgap {
+    margin-bottom: 300px;
+  }
+  .gap {
+    min-height: 50px;
+    height: 50px;
+    display:block;
+  }
+  figure {
+    margin: 0;
+  }
+  .card {
+    display: inline-block;
+    width: 25%;
+    min-width: 280px;
+    height: 280px;
+    background-color: #ddd;
+  }
+  .card {
+    margin-left: 0;
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: auto;
+    width: 100%;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #222222;
+    text-align: left;
+    padding: 14px 40px 14px 40px;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  .topnav .r {
+      float: right;
+      font-size: .7em;
+      margin-top: 8px;
+  }
+  .topnav .r a {
+      color: #9a9a9a;
+  }
+  .topnav .r a:hover {
+   /* background-color: #ddd; */
+    color: red;
+  }
+
+  /*.active {
+    background-color: #555;
+    color: white;
+  }*/
+
+  .topnav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 720px) {
+    .topnav .r {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav a.icon:hover {
+      color: red;
+    }
+
+  .topnav.responsive {
+    position: fixed;
+    height: 100vh;
+    }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive .r {
+    display: block; 
+    float:left;
+    margin-left: 24px;
+    margin-top: 168px;
+    }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+  .nf {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;    
+  }
+  hr {
+    margin-top: 100px;
+  }
+
 </style>
-<h1>Rebecca N. Schultz</h1>
-<h2>DATA ANALYST</h2>
-<p>Project Manager<br>
+</head>
+<body id="home">
+
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="nf active" onclick="toggleOff()">Rebecca N. Schultz</a>
+    <div class="r">
+      <a href="#about" style="padding-right:16px;padding-left:16px;" onclick="toggleOff()">About</a>
+      <a href="#portfolio" onclick="toggleOff()" style="padding-right:16px;padding-left:16px;">Portfolio</a>
+      <a href="#contact" style="padding-left:16px;" onclick="toggleOff()">Contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="toggle()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+<div class="masthead">&nbsp;
+<!-- <h1 class="top">Rebecca N. Schultz</h1>
+<h2>PROJECT MANAGER</h2> -->
+</div>
+
+<div class="wrapper">
+ 
+  
+ <p class="bottomgap"> Project Manager<br>
+Data Analyst<br>
 Training Specialist<br>
 Technical Writer</p>
+
+  
+  
+  
+<!-- 
+
+      __   __       ___
+ /\  |__) /  \ |  |  |
+/~~\ |__) \__/ \__/  |
+    
+
+--> 
+  
+<span id="about" class="gap">&nbsp;</span>
+
+  <h4>ABOUT</h4>
+
+<h1>Hello!</h1>
+<div class="multi">
+<p class="break">Whether under the sea, on land, or in the air, I’m motivated by a deep desire to work hard to find intelligent solutions and produce measurable results. Here are a few examples of where my skills have been useful.</p><p>
+When I began ocean diving, I noticed that some of the coral reefs were deteriorating. I decided to initiate a coral care project, and managed the deployment of 45 habitats to revive decaying coral reefs. I also built awareness programs to educate the community. </p><p>On terra firma, I managed a service learning program, coordinating collaborations between non-profits directors and university professors. I drove fund-raising and assisted with administration.</p>
+  <p>At World Atlantic Airlines, I managed two projects: technical publications and safety data analysis. I also persuaded management to migrate from paper-based reporting forms to an online mobile system.</p>
+  <p>Presently, I am seeking a challenging opportunity to fully utilize and apply my problem-solving skills, education, experience, and training.</p>
+  </div>
+<br>
+<br>
+<picture>
+  <source srcset="imgs/RSchultz.png" media="(max-width: 361px)">
+  <source srcset="imgs/DarkBkgr.png">
+  <img src="imgs/DarkBkgr.png" alt="Rebecca">
+</picture>
+
+<h5><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h5>
+<br>
+
+<span class="gap">&nbsp;</span>
+<span class="gap">&nbsp;</span>
+<h1>Resume</h1>
+
+<!-- <h4><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h4> -->
+<br>
+<img src="imgs/resumePM.png">
+<br>
+
+
+<span class="gap">&nbsp;</span>
+<span class="gap">&nbsp;</span>
+<h1>Certifications</h1>
+<p><b>Business Specialist<br>
+Business Operations<br>
+Accounting Technology<br>
+Specialist</b><br>
+Broward College<br>
+Davie, FL<br>
+May 2018<br>
+<br>
+<b>Project Management</b><br>
+Executive Certificate<br>
+Florida Atlantic University<br>
+Boca Raton, FL<br>
+April 2018<br>
+<br>
+<b>Geographic Information<br>
+Systems</b><br>
+Broward College<br>
+Davie, FL<br>
+May 2016<br>
+<br>
+<b>Environmental Studies</b><br>
+Florida International University<br>
+Miami, FL<br>
+August 2011<br>
+<br>
+<b>Underwater Forensics</b><br>
+Chaminade University<br>
+Honolulu, HI<br>
+July 2009</p>
+<!-- <h4><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h4> -->
+<br>
+
+
+<span class="gap">&nbsp;</span>
+<span class="gap">&nbsp;</span>
+<h1>Affiliations</h1>
+<p><b>PMI, Project Management Institute</b><br>
+02/2018 - Present<br>
+pmi.org<br>
+<br>
+<b>Women in Aviation, International</b><br>
+10/2017 - Present<br>
+wai.org<br>
+<br>
+<b>Sigma Alpha Iota International</b><br>
+Music Fraternity<br>
+01/2011 - Present<br>
+sai-national.org<br>
+<br>
+<b>Sigma Sigma Sigma National</b><br>
+Sorority<br>
+10/2007 - Present<br>
+trisigma.org<br>
+<br>
+<b>Girl Scouts of the USA</b><br>
+06/2007 - Present<br>
+girlscouts.org</p>
+<!-- <h4><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h4> -->
+<br>
+
+
+<span class="gap">&nbsp;</span>
+<span class="gap">&nbsp;</span>
+<h1>Volunteer</h1>
+<p><b>Kitten socialization and foster care</b><br>
+  The Cat Network<br>
+  10/2013 - Present</p>
+<!-- <h4><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h4> -->
+<br>
+
+
+<span class="gap">&nbsp;</span>
+<span class="gap">&nbsp;</span>
+<h1>Awards</h1>
+<p><b>2017</b><br>
+Safety Management Systems certification award<br>
+<br>
+<b>2014</b><br>
+Service Learning Organization Appreciation Award from Broward College<br>
+<br>
+<b>2013</b><br>
+Service Learning Organization Appreciation Award from Broward College<br>
+<br>
+<b>2012</b><br>
+Service Learning Organization Appreciation Award from Broward College<br>
+<br>
+<b>2011</b><br>
+Presidents Volunteer Service Award<br>
+<br>
+<b>2010</b><br>
+kynamatrix Research Network Grant<br>
+Sea Scout Ship 814 Operation Reef Ball Project Phase 2<br>
+William T Hornaday Silver Environmental Award - BSA National Award for exceptional achievement in environmental projects and contributions to conservation.<br>
+Sea Scout Quartermaster Award <br>
+National Catholic Committee on Scouting Pope Pius Award<br>
+BSA Venturing Silver Award <br>
+<br>
+<b>2009</b><br>
+PADI Rescue Diver certification<br>
+BSA Venturing Gold Award<br>
+Shackleton Award - Awarded for presentation of great leadership in Sea Scouts<br>
+<br>
+<b>2008</b><br>
+Sea World/Busch Gardens Environmental Excellence Award $10,000 
+Association of Fundraising Professionals: Outstanding Youth in Philanthropy<br>
+Archdiocese of Miami Archbishop McCarthy Award<br>
+Archdiocese of Miami Saint Timothy Award<br>
+BSA Venturing Bronze Award<br>
+Presidents Volunteer Service Award<br>
+<br>
+<b>2007</b><br>
+National Girl Scout Young Women of Distinction Award<br>
+Girl Scout Gold Award <br>
+Cummings Environmental Award and Scholarship<br>
+Senior Showcase<br>
+Presidents Volunteer Service Award<br>
+</p>
+<!-- <h4><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h4> -->
+<br>
+
+  
+
+<!-- 
+
+ __   __   __  ___  ___  __          __
+|__) /  \ |__)  |  |__  /  \ |    | /  \
+|    \__/ |  \  |  |    \__/ |___ | \__/
+
+
+-->  
+  
+  
+<span id="portfolio" class="gap">&nbsp;</span>
+
+<h4>PORTFOLIO</h4><br>
+  
+  <figure class="card"><a href="#airline"><img src="imgs/AIRSAFETY.png"></a><figurecaption>01 Airline Tech</figurecaption></figure><figure class="card"><a href="#wildlife"><img src="imgs/WildlifeCare.png" width="280"></a><figurecaption>02 Wildlife Care</figurecaption></figure><figure class="card"><a href="#coral"><img src="imgs/ORB560x560.png" width="280"></a><figurecaption>03 Coral Revival</figurecaption></figure>
+  
+<span id="airline" class="gap">&nbsp;</span>
+<hr>
+<h1>01 <br>Airline Tech</h1>
+  <div class="multi"><p>For years, a system existed, paper documents are filed in a certain way, with signatures required in a specific order. Forms were torn apart, leaving missing pages and barely legible notes on the change request. </p><p>Time was not something easily controlled. When the manual owner was finished, another director was next in line to sign the same paper. But was it sent forward for the third signature? Was it still intact? Was it still cohesive? Did they follow up with the last needed signature and then remember to send it back to the Technical Writing department? Did it get lost on some director’s desk? How long does one wait until they tug on the director's pen without appearing pushy?</p><p>
+Deadlines were being missed.
+Documents were being lost. This had to change.
+</p><p>
+We live in a paperless society. Documents are passed from one team member to another faster than an Olympic relay race. With handheld devices, the days of delay are over. Tracking and advancing necessary forms with the correct signatures, sent automatically to the next person in line, is possible with the creation of an online responsive system. None of the documents were proprietary or in a category which required a non-disclosure form to exit the building. These forms were public, and were needed for safety regulations approvals. If a new plane was to land on a runway, it had to be of a certain weight and size. If it was too big, it would not be able to stop properly, putting individuals, buildings, the plane, its cargo, and the environment in harm’s way. If, on the other hand, it was a perfect fit, the fleet would be welcome to land when scheduled, joining the family of invited guests. No go meant there was something wrong. Calculations for identifying over 200 questions was a laborious task. This delayed approvals.</p><p>
+Contracts were lost due to delays and necessary deliveries. However, safety is key.</p></div>
+
+<!-- <h4><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h4> -->
+
+<br>
+<h2>P1.1 <br><span class="darken">Technical Writing System Standard</span></h2>
+  <h5><span id="red">Project Manager</span>, <span id="red">Technical Writer</span>,  Data Analyst, &amp; Training Specialist</h5>
+
+  <div class="multi"><p>The technical writing department was set up as individual users with single use copies of the publishing software with no version control management. The inconsistent system versions made it difficult if not impossible to share documents between technical writers. This represented a significant risk as these documents could only be accessed and maintained by the individual who had the correct version on their computer. In addition, it would take IT longer to identify any issues as they had to look at a specific environment rather than a standardized one.</p>
+
+
+<p>A 30 day project plan was developed to implement the standardized publishing system across the technical writing department. Budget and cost management plan was established. Contracts for the software had to be initiated and executed. Effective management of IT resources was necessary to implement new software systems and address individual system constraints. Following implementation, stakeholders were trained on a consistent system and upgrading their documents to the new system format. System maintenance was transferred to IT and utilization was maintained by the technical writing department.</p>
+</div>
+<!-- <h4><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h4> -->
+
+<br>
+<br>
+  <h2>P1.2 <br><span class="darken">Form Standardization</span></h2>
+  <h5><span id="red">Project Manager</span>, <span id="red">Technical Writer</span>, <span id="red">Data Analyst</span>, &amp; <span id="red">Training Specialist</span></h5>
+<div class="multi"><p>The airline utilized an <em>ad hoc</em> approach to risk management and safety reporting with each department developing their own documentation format. FAA regulation required standardization of the risk management and safety incident forms. The standardized documents would facilitate risk analysis and mitigation as well as safety incident response. The project timeline was 2 months. The scope of the project was identified and the stakeholders were surveyed to determine the specific departmental requirements as well as the development of a system to manage the incident response process. Following the technical writing process, the documents were regularly reviewed by departmental SMEs. These forms were reviewed and edited, where I maintained version control, upon approval executive leadership. Stakeholders were trained in the access and use of the new documents. Ownership was then transferred to the safety department manager.</p>
+  </div>
+<!-- <h4><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h4> -->
+
+<br>
+<br>
+  <h2>P1.3 <br><span class="darken">Safety Management System Manual</span></h2>
+  <h5><span id="red">Project Manager</span>, <span id="red">Technical Writer</span>, Data Analyst, &amp; <span id="red">Training Specialist</span></h5>
+  <div class="multi"><p>The project objective was the compilation of FAA regulated Safety Management System (SMS) manual. The project had a critical six-month deadline as defined by the FAA requirements. During the development process, I was responsible for coordinating internal staff and external stakeholders compiling and editing the manual and as well as managing the administration of formal document review and verification.  Implementation of the time management plan effectively coordinated the SME schedule supporting the multi-phase internal / external audit process.  The project culminated with final presentation of the manual to the FAA for audit and approval.  The FAA approved manual was then transferred to the airline Safety Director to maintain.</p></div>
+
+<!-- <h4><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h4> -->
+
+<br>
+  <h2>P1.4 <br><span class="darken">Mobile Migration</span></h2>
+  <h5><span id="red">Project Manager</span>, Technical Writer, <span id="red">Data Analyst</span>, &amp; Training Specialist</h5>
+  <div class="multi"><p>Reports and forms utilized by the in-flight staff would often be received by the dispatch office missing pages or information. Incident data would be filled out after a significant delay leading to mistakes and missing components. The Safety Director wanted a method developed to provide the in-flight staff a direct and immediate way to complete an incident report.  A requirement was to utilize the iPads each in-flight crewmember already possessed to digitally record and report the incident specifics.</p><p>
+This four-month project plan includes meeting with and obtaining information from stakeholders to determine information and data requirements, design expectations, risk mitigation, and training needs assessment and delivery to the stakeholders. Following implementation, the effectiveness was monitored by analyzing errors on the received incident reports. Ownership was transferred to the safety department manager following successful development and implementation of the project.  </p></div>
+
+<!-- <h4><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h4> -->
+<br>
+<br>
+<figure>
+  <img src="imgs/mobile.png">
+  <figcaption>Mobile migration app - safety forms</figcaption>
+</figure>
+<br>
+<br>
+<figure>
+  <img src="imgs/MobileMigration.jpg">
+  <figcaption>Mobile migration project sketches</figcaption>
+</figure>
+<br>
+
+<span id="wildlife" class="gap">&nbsp;</span>
+<hr>
+<h1>02 <br>Wildlife Care</h1>
+<div class="multi">
+<p>Funds are necessary to feed critters. The wildlife organization feeds 7000 variations of hungry and injured, winged, crawling, slithering, and scaly. The sheer volume of water needed to house a restoration and bathing tank could fill two olympic pools in a few hours.
+  </p><p>
+Cereal, old newspapers, towels, and mealworms, all necessary to sustain a comfortable warm, dry, and safe space for a baby squirrel in the aftermath of a horrific car crash, narrowly escaping the crushing wheels, however, unable to land upright, now in need of stitches and restrained mobility. A family of birds nestled secure and warm, awaiting the dinner hour, hear strange noises as the chain saws begin their descent from the top of the tree. One-by-one the limbs of the tree fall with a loud thud. And in an instant, their home is gone.
+</p><p>
+Unaware, mom returns to a vast empty space, a location to be repurposed for economic gain. Wings broken, no where to turn, a glint of hope remains.
+</p><p>
+This safe space, a wildlife rescue habitat, an emergency room prepping for lifesaving surgery. And even with a healed wing, I among many, will serve as ambassadors, sharing the details of my talons, my expansive feather array, and the sounds usually heard from a distance, known only to my kind.</p><p>
+Presenting a unique view for children and adults, I have a new purpose, to educate and provide a reason to smile.
+</p><p>
+Under our roof, we do not discriminate. Predators in the wild share solace, a calm space to recover from natural disaster, displaced from a forest fires, hurricanes, or tornados. We craft accommodations to isolate temperamental, so they will not harm each other during their stay. All this takes funds.
+</p><p>
+
+<b>Task:</b> I was asked to raise $15,000. I approached this problem using three methods. The first method I proposed was to create an online presence to raise awareness and provide a channel for online donations.
+</p><p>
+The second method involved orchestrating a mammoth garage sale. Items could be donated, and then sold. All profits would benefit the animals and the care they desperately need. Sponsors could be involved, requesting donations in the form of snacks for the animals, and volunteers, as well as resources for the office and cages.
+</p><p>
+The third method was an evening to remember, a gala, dressed in black tie, sharing a toast to all the efforts of the volunteers, presenting visions of the future renovation plans, unveiling past milestones accomplished yearlong, showcasing the animals on a runway, as they passed the basket.</p>
+</div>
+<br>
+<br>
+<img src="imgs/owl.png">
+<br>
+<br>
+<!-- <h4><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h4> -->
+
+<br>
+  <h2>P2.1 <br><span class="darken">Gala Fundraiser</span></h2>
+  <h5><span id="red">Project Manager</span>, Technical Writer, Data Analyst, &amp; <span id="red">Training Specialist</span></h5>
+  <div class="multi"><p>The SNC annual gala is the primary fundraiser supporting nature center activities. This event provides an average of $30,000 toward center necessities. The gala is an opportunity for the community to provide direct support for the injured native wildlife.
+</p><p>
+Each year provides a unique opportunity to address current needs of the hospital and center in support of their mission. The project begins with an assessment of needs and an estimation of the costs associated with those needs. This serves as a foundation for the project planning helping to set goals for fundraising and community engagement.
+</p><p>
+This six month project plan includes such activities as the logistics of the event, coordinating resources including staff and volunteers’ management, cost containment including procurement management and contract maintenance, communication with the board of directors, volunteers, and invitees, risk assessment and mitigation, and night of the event activities.
+</p><p>
+Following the fruitful event, final costs are managed and final reports with lessons learned are compiled and delivered to the executive board. The project included a Gala project guide to be used by the center for similar future events.
+  </p></div>
+<br>
+<img src="imgs/gala.jpg">
+<br>
+<br>
+<!-- <h4><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h4> -->
+<br>
+  <h2>P2.2 <br><span class="darken">Community Garage Sale </span></h2>
+  <h5><span id="red">Project Manager</span>, <span id="red">Technical Writer</span>,  Data Analyst, &amp; Training Specialist</h5>
+<div class="multi"><p>The annual indoor garage sale is a secondary fundraiser event that tends to net $5,000 by the end of the event. These funds are utilized directly towards the hospital expenses.
+</p><p>
+This four month project plan includes finding and securing a location, risk assessment and mitigation, coordinating resources including staff and volunteer management, communicating with members to solicit donations, and logistics of moving products to the sale site and organized by a set floor plan.  The weekend event would be advertised in local schools and on the city’s tv station.
+</p><p>
+Following the successful event, the location was returned to its original condition and final reports and lessons learned were compiled and delivered to executive leadership and the board. The project included an Indoor Garage Sale project guide to be used by the center for similar future events.
+  </p></div>
+<!-- <h4><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h4> -->
+<br>
+<img src="imgs/sale01.jpg">
+<br>
+<br>
+<img src="imgs/sale02.jpg">
+<br>
+<br>
+<img src="imgs/sale02a.jpg">
+<br>
+<br>
+<img src="imgs/sale03.jpg">
+<br>
+<br>
+  <h2>P2.3 <br><span class="darken">Online Fundraising </span></h2>
+  <h5><span id="red">Project Manager</span>, Technical Writer, <span id="red">Data Analyst</span>, &amp; <span id="red">Training Specialist</span></h5>
+  <div class="multi"><p>One current consistent donation method is a link on the website to PayPal where individuals can go to donate any monetary amount they desire. This method however can only be done when the link is advertised to the general public. In addition to the current single donation method, the center wished to encourage sustained contributions.
+</p><p>
+This one month project plan including finding and securing an alternative way for people to donate to the center via an online venue, risk assessment of programs, managing effects on the budget, communicating with online presence, and logistics of website design.
+</p><p>
+Following implementation, stakeholders were trained on the two donation programs. System maintenance was transferred to the Operations Director.
+  </p></div>
+<!-- <h4><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h4> -->
+<br>
+
+<span id="coral" class="gap">&nbsp;</span>
+<hr>
+<h1>03 <br>Coral Revival</h1>
+  <div class="multi"><p>Imagine life without coral. All the fish in the sea would need scuba gear to breathe. Coral is not just colorful under water plants. Corals are animals bringing shelter and more to the environment. And they are dying. What once was a vast array of vibrant hues, breath taking and voluminous gardens of the sea, are now seemingly burned from the sunlight, bleached, stripped of life. The question I had was why. And better yet, what can be done to fix it, restoring the patterns void below the ocean’s surface.
+</p><p>
+Extensive, exhaustive research became my focus, pinpointing the cause. Numerous artificial reefs methods have been deployed but many have unexpected impacts and can actually damage the environment they are expected to support!  Joining forces with a non-profit specializing in coral reef restoration, I learned about reef balls, a designed artificial reef component composed of a cement half dome with holes for fish to enter and exit. Reef Balls allow a stable habitat for corals to cling to and grow. Small fish had somewhere to escape when large fish are hungry. Reef balls do not add to the pollution, they do not emit oil and toxins like a sunken ship or the remains of a waste dump.
+</p><p>
+Taking further action, I decided to hold workshops, creating awareness of young and old. Interactive workbooks, developed to utilize edu-tainment training models, introduce ocean and waterway awareness, provide deep dive virtual excursions to the bottom of the sea, and develop the understanding the anatomy of coral: how it is a living, breathing, animal, not a plant. The workbook, presents facts and the science in the design of artificial reefs and reef balls, their purpose, their construction, and their secret compartmental resting places.
+</p><p>
+How heavy is your car? A single reef ball needs a crane to lift the ball above the sand on to a vessel. A standard deployment can accommodate up to 10 reef balls. The project has successfully deployed over 45 reef balls to date. Raising funds from numerous community sponsors including Target and Sea World as well as in-kind donations supporting the project.
+</p><p>
+As I continue to dive the reef sites, photographing the newly placed reef ball homes, the envisioned, created, transported, deployed, and now monitored artificial reef, I am proud of the accomplishment, but more importantly, the coral now has a chance for revitalization.
+</p><p>
+In a continuation of the education and awareness component of this endeavor, I followed up by developing a narrated story book, to enliven the audience understanding of the components or characters in the story. Animating the various participants giving them a voice, making them tell their story from their perspective, a hero, a villain, a plot, an escape, and a happy ending. All written to bring awareness to a definitive problem.
+</p><p>
+The coral is dying. We can fix this with a few changes in daily habits and focused restoration efforts. This collection of projects is my contribution.</p></div>
+<br>
+  <br>
+
+
+  <h2>P3.1 <br><span class="darken">Deployment </span></h2>
+  <h5><span id="red">Project Manager</span>, Technical Writer, <span id="red">Data Analyst</span>, &amp; <span id="red">Training Specialist</span></h5>
+  <div class="multi"><p>Ocean waterways and coral reefs are an integral part of life in South Florida. To combat the coral reef degradation, the project creates and deploys artificial reef components designed for the specifics of the South Florida environment. The reef ball imitates the appearance and function of natural coral reefs and provides a stable environment for corals and other marine life. </p><p>As a result, the area will experience an increase in fish population and healthier waterways. Stakeholder (including regulatory agency) needs assessments were conducted and results were incorporated in the project plan.  Project budget requirements led to grant application and donation solicitation efforts. Communications planning supported community awareness and stakeholder reporting requirements. </p><p>Ultimately over 30 reef balls were created and deployed in the initial deployment. Technical documentation, training agendas and curriculum, deployment reports and coral growth data collection and analysis tools were provided to various agencies for ongoing monitoring and maintenance.</p></div>
+<!-- <h4><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h4> -->
+<br>
+
+
+  <h2>P3.2 <br><span class="darken">Education </span></h2>
+  <h5><span id="red">Project Manager</span>, <span id="red">Technical Writer</span>, Data Analyst, &amp; <span id="red">Training Specialist</span></h5>
+  <div class="multi"><p>The project is the development and presentation of community coral reef education opportunities. Community participants study the current state of the ocean and reef environment, the effects of human interaction with the environment, and what can be done to restore and revitalize the natural habitats. They learn how humans can stop the damage and help restore the natural habitat. </p><p>Project objectives included the identification and coordination of community agencies and organizations to support the goal of improving the environment through education, organizing the location logistics of the opportunity, managing the communication efforts, and ensuring the materials required are available for the presentations. Event outcome reports were developed and delivered to grant managers and other stakeholders.  Community agencies received event documentation and lessons learned to support future presentations and events.</p></div>
+<!-- <h4><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h4> -->
+
+<br>
+<img src="imgs/characters01.png">
+<br>
+<br>
+<img src="imgs/characters02.png">
+<br>
+<br>
+<img src="imgs/workbook01.jpg">
+<br>
+<br>
+<img src="imgs/workbook02.jpg">
+<br>
+<br>
+<img src="imgs/workbook03.jpg">
+<br>
+<br>
+<img src="imgs/seaTreasures01.png">
+<br>
+<br>
+<img src="imgs/seaTreasures02.png">
+<br>
+
+
+<br>
+  <h2>P3.3 <br><span class="darken">Creating A Company</span></h2>
+  <h5><span id="red">Project Manager</span>, <span id="red">Technical Writer</span>, <span id="red">Data Analyst</span>, &amp; <span id="red">Training Specialist</span></h5>
+  <div class="multi"><p>As my commitment to coral reef preservation and restoration grew, the need for a coordination and formalization of efforts became apparent. Creative ideas and project opportunities were abundant. Sponsors and other stakeholders needed a name, an entity, they could reference in their outreach efforts. 
+    </p><p>
+The project to establish a company was a natural extension of the programs, projects, and resources already developed and presented. Operation Reef Ball continues my original mission to provide low or no-cost resources for community awareness and coral reef restoration efforts. </p><p>The project plan included: develop the corporate identity; (logo, communication templates, t-shirt design for event participants) initialize a presentation and resource repository; establish a coordinated social media presence; and create a primary program persona / character for communications. The six-month project engaged stakeholders to define needs, required the management of human and other resources, and involved significant planning to ensure all aspects of the project were successfully addressed, on time, and within budget.</p><p> As a result, Operation Reef Ball is preserving our water resources through education and a little bit of concrete!</p></div>
+
+<!-- <h4><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h4> -->
+<br>
+<br>
+<img src="imgs/identitycard.png">
+<br>
+<br>
+<img src="imgs/identityTShirt.jpg">
+<br>
+<br>
+    
+<!-- 
+
+ __   __       ___       __  ___
+/  ` /  \ |\ |  |   /\  /  `  |
+\__, \__/ | \|  |  /~~\ \__,  |
+
+
+--> 
+    
+<span id="contact" class="gap">&nbsp;</span>
+
+<h4>CONTACT</h4>
+<p><b>LinkedIn Profile</b><br>
+linkedin.com/in/rebeccanschultz<br>
+<br>
+<b>Phone</b><br>
+305.791.4240 <br>
+  <br>
+<b>Email</b><br>
+RebeccaNSchultz at gmail dot com</p>
+<!-- <h4><span id="red"> Project Manager</span>, Technical Writer,  Data Analyst, &amp; Training Specialist</h4> -->
+
+<br>
+<span  class="gap">&nbsp;</span>
+<span  class="gap">&nbsp;</span>
+<span  class="gap">&nbsp;</span>
+<span  class="gap">&nbsp;</span>
+
+ <footer>Last update: 20181029</footer>
+
+</div>  <!-- end wrapper -->
+
+<script>
+  function toggle() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") 
+      x.className += " responsive";
+    else 
+      x.className = "topnav";
+  }
+  function toggleOff() {
+    var x = document.getElementById("myTopnav");
+      x.className = "topnav";
+  }
+</script>
+</body>
+</html>
