@@ -8,219 +8,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet"> 
 <title>Rebecca N. Schultz | Project Manager </title>
-<style>
-  html {
-    margin: 0px;
-    padding: 0px;
-  }
-  body {
-    box-sizing: border-box;
-    color: #707070;  /* #9A9A9A; */
-    background: #f4f4f4; /* #EAE8E8; */
-    font-family: 'Roboto', sans-serif;
-    font-size:1.1em;
-    scroll-behavior: smooth;
-  }
-  .masthead {
-    margin:0px;
-    padding:0px;
-  }
-
-  .wrapper {
-    margin: 40px auto;
-    padding: 10px 40px;
-    background-color: #f4f4f4;
-    max-width: 1024px;
-  }
-  h1 {
-    font-size: 32px;
-    font-weight: 400;
-    margin-top:10px;
-  }
-  h2 {
-    font-size: 1.2em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color:#707070;
-    margin-top: 0px;
-    margin-bottom: 6px;
-  }
-  .darken {
-    color: #222;
-  }
-  h4 {
-    font-size: 18px;
-    font-weight: 100;
-    color:#333333;
-  }
-  h5 {
-    font-size: 1em;
-    font-weight: 100;
-    color:#333333;
-    margin-top: 6px;
-    margin-bottom: 36px;
-  }
-  ul {
-    list-style: none;
-  }
-  .masthead {
-    background-color: #ffffff;
-    color: #222222;
-    font-family: Oswald;
-    font-weight: 100;
-
-    margin: 0px;
-    padding: 20px;
-    padding-left: 40px;
-    height: 60px;
-  }
-  .masthead h1 {
-    font-size: 1.5em;
-  }
-  .masthead h2 {
-    font-size: 0.75em;
-  }
-  .top {
-    margin-bottom:0;
-  }
-  p {
-    margin: 0 0 20px 0;  
-  }
-  .multi { 
-  column-count: 1;
-  }
-  img {
-    width: 100%;
-  }
-  @media screen and (min-width: 520px) {
-    .multi { 
-    column-count: 2;
-    }
-  }
-  @media screen and (min-width: 769px) {
-    .multi { 
-      column-count: 3;
-    }
-  }
-  .red {
-    color: #DD1C25; /*red*/
-  }
-  .bottomgap {
-    margin-bottom: 300px;
-  }
-  .gap {
-    min-height: 50px;
-    height: 50px;
-    display:block;
-  }
-  figure {
-    margin: 0;
-  }
-  .card {
-    display: inline-block;
-    width: 25%;
-    min-width: 280px;
-    height: 280px;
-    background-color: #ddd;
-  }
-  .card {
-    margin-left: 0;
-    margin-right: 20px;
-    margin-bottom: 40px;
-  }
-  .topnav {
-    overflow: hidden;
-    background-color: #fff;
-    position: fixed;
-    left: 0;
-    top: 0;
-    min-width: auto;
-    width: 100%;
-  }
-
-  .topnav a {
-    float: left;
-    display: block;
-    color: #222222;
-    text-align: left;
-    padding: 14px 40px 14px 40px;
-    text-decoration: none;
-    font-size: 1.5em;
-  }
-  .topnav .r {
-      float: right;
-      font-size: .7em;
-      margin-top: 8px;
-  }
-  .topnav .r a {
-      color: #9a9a9a;
-  }
-  .topnav .r a:hover {
-   /* background-color: #ddd; */
-    color: red;
-  }
-
-  /*.active {
-    background-color: #555;
-    color: white;
-  }*/
-
-  .topnav .icon {
-    display: none;
-  }
-
-  @media screen and (max-width: 720px) {
-    .topnav .r {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-    .topnav a.icon:hover {
-      color: red;
-    }
-
-  .topnav.responsive {
-    position: fixed;
-    height: 100vh;
-    }
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive .r {
-    display: block; 
-    float:left;
-    margin-left: 24px;
-    margin-top: 168px;
-    }
-
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-  .nf {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;    
-  }
-  hr {
-    margin-top: 100px;
-  }
-  figcaption a:link {
-    color: #9A9A9A;
-    text-decoration: none;
-  }
-  figcaption a:visited {
-    color: #9A9A9A;
-    text-decoration: none;
-  }
-  figcaption a:hover {
-    color: #f00;
-    text-decoration: none;  
-  }
-</style>
+<link href="style.css" rel="stylesheet">
 </head>
 <body id="home">
 
@@ -448,7 +236,7 @@ The following four projects showcase my project management, technical writing sk
 <br>
 <br>
 <h2>P1.1 <br><span class="darken">Technical Writing System Standard</span></h2>
-  <h5><span class="red">Project Manager</span>, <span class="red">Technical Writer</span>,  Data Analyst, &amp; Training Specialist</h5>
+  <h5><span class="red">Project Manager &amp; Technical Writer</span></h5>
 
   <div class="multi"><p>The technical writing department was set up as individual users with single use copies of the publishing software with no version control management. The inconsistent system versions made it difficult if not impossible to share documents between technical writers. This represented a significant risk as these documents could only be accessed and maintained by the individual who had the correct version on their computer. In addition, it would take IT longer to identify any issues as they had to look at a specific environment rather than a standardized one.</p>
 <p>A 30 day project plan was developed to implement the standardized publishing system across the technical writing department. Budget and cost management plan was established. Contracts for the software had to be initiated and executed. Effective management of IT resources was necessary to implement new software systems and address individual system constraints. Following implementation, stakeholders were trained on a consistent system and upgrading their documents to the new system format. System maintenance was transferred to IT and utilization was maintained by the technical writing department.</p>
@@ -457,7 +245,7 @@ The following four projects showcase my project management, technical writing sk
 <br>
 <br>
   <h2>P1.2 <br><span class="darken">Form Standardization</span></h2>
-  <h5><span class="red">Project Manager</span>, <span class="red">Technical Writer</span>, <span class="red">Data Analyst</span>, &amp; <span class="red">Training Specialist</span></h5>
+  <h5><span class="red">Project Manager, Technical Writer, Data Analyst, &amp; Training Specialist</span></h5>
 <div class="multi"><p>The airline utilized an <em>ad hoc</em> approach to risk management and safety reporting with each department developing their own documentation format. FAA regulation required standardization of the risk management and safety incident forms. The standardized documents would facilitate risk analysis and mitigation as well as safety incident response. The project timeline was 2 months. The scope of the project was identified and the stakeholders were surveyed to determine the specific departmental requirements as well as the development of a system to manage the incident response process. Following the technical writing process, the documents were regularly reviewed by departmental SMEs. These forms were reviewed and edited, where I maintained version control, upon approval executive leadership. Stakeholders were trained in the access and use of the new documents. Ownership was then transferred to the safety department manager.</p>
   </div>
 <br>
@@ -470,7 +258,7 @@ The following four projects showcase my project management, technical writing sk
 <br>
 <br>
   <h2>P1.3 <br><span class="darken">Safety Management System Manual</span></h2>
-  <h5><span class="red">Project Manager</span>, <span class="red">Technical Writer</span>, Data Analyst, &amp; <span class="red">Training Specialist</span></h5>
+  <h5><span class="red">Project Manager, Technical Writer, &amp; Training Specialist</span></h5>
   <div class="multi"><p>The project objective was the compilation of FAA regulated Safety Management System (SMS) manual. The project had a critical six-month deadline as defined by the FAA requirements. During the development process, I was responsible for coordinating internal staff and external stakeholders compiling and editing the manual and as well as managing the administration of formal document review and verification.  Implementation of the time management plan effectively coordinated the SME schedule supporting the multi-phase internal / external audit process.  The project culminated with final presentation of the manual to the FAA for audit and approval.  The FAA approved manual was then transferred to the airline Safety Director to maintain.</p></div>
 <br>
 <br>
@@ -482,7 +270,7 @@ The following four projects showcase my project management, technical writing sk
 <br>
 <br>
   <h2>P1.4 <br><span class="darken">Mobile Migration</span></h2>
-  <h5><span class="red">Project Manager</span>, Technical Writer, <span class="red">Data Analyst</span>, &amp; Training Specialist</h5>
+  <h5><span class="red">Project Manager &amp; Data Analyst</span></h5>
   <div class="multi"><p>Reports and forms utilized by the in-flight staff would often be received by the dispatch office missing pages or information. Incident data would be filled out after a significant delay leading to mistakes and missing components. The Safety Director wanted a method developed to provide the in-flight staff a direct and immediate way to complete an incident report.  A requirement was to utilize the iPads each in-flight crewmember already possessed to digitally record and report the incident specifics.</p><p>
 This four-month project plan includes meeting with and obtaining information from stakeholders to determine information and data requirements, design expectations, risk mitigation, and training needs assessment and delivery to the stakeholders. Following implementation, the effectiveness was monitored by analyzing errors on the received incident reports. Ownership was transferred to the safety department manager following successful development and implementation of the project.  </p></div>
 <br>
@@ -528,7 +316,7 @@ The third method I proposed was to create an online presence to raise awareness 
 <br>
 <br>
   <h2>P2.1 <br><span class="darken">Gala Fundraiser</span></h2>
-  <h5><span class="red">Project Manager</span>, Technical Writer, Data Analyst, &amp; <span class="red">Training Specialist</span></h5>
+  <h5><span class="red">Project Manager &amp; Training Specialist</span></h5>
   <div class="multi"><p>The SNC annual gala is the primary fundraiser supporting nature center activities. This event provides an average of $30,000 toward center necessities. The gala is an opportunity for the community to provide direct support for the injured native wildlife.
 </p><p>
 Each year provides a unique opportunity to address current needs of the hospital and center in support of their mission. The project begins with an assessment of needs and an estimation of the costs associated with those needs. This serves as a foundation for the project planning helping to set goals for fundraising and community engagement.
@@ -547,7 +335,7 @@ Following the fruitful event, final costs are managed and final reports with les
 <br>
 <br>
   <h2>P2.2 <br><span class="darken">Community Garage Sale </span></h2>
-  <h5><span class="red">Project Manager</span>, <span class="red">Technical Writer</span>,  Data Analyst, &amp; Training Specialist</h5>
+  <h5><span class="red">Project Manager &amp; Technical Writer</span></h5>
 <div class="multi"><p>The annual indoor garage sale is a secondary fundraiser event that tends to net $5,000 by the end of the event. These funds are utilized directly towards the hospital expenses.
 </p><p>
 This four month project plan includes finding and securing a location, risk assessment and mitigation, coordinating resources including staff and volunteer management, communicating with members to solicit donations, and logistics of moving products to the sale site and organized by a set floor plan.  The weekend event would be advertised in local schools and on the city’s television station.
@@ -570,7 +358,7 @@ Following the successful event, the location was returned to its original condit
 <br>
 <br>
   <h2>P2.3 <br><span class="darken">Online Fundraising </span></h2>
-  <h5><span class="red">Project Manager</span>, Technical Writer, <span class="red">Data Analyst</span>, &amp; <span class="red">Training Specialist</span></h5>
+  <h5><span class="red">Project Manager, Data Analyst, &amp; Training Specialist</span></h5>
   <div class="multi"><p>One current consistent donation method is a link on the website to PayPal where individuals can go to donate any monetary amount they desire. This method however can only be done when the link is advertised to the general public. In addition to the current single donation method, the center wished to encourage sustained contributions.
 </p><p>
 This one month project plan including finding and securing an alternative way for people to donate to the center via an online venue, risk assessment of programs, managing effects on the budget, communicating with online presence, and logistics of website design.
@@ -606,7 +394,7 @@ The coral is dying. We can fix this with a few changes in daily habits and focus
 <br>
 <br>
   <h2>P3.1 <br><span class="darken">Deployment </span></h2>
-  <h5><span class="red">Project Manager</span>, Technical Writer, <span class="red">Data Analyst</span>, &amp; <span class="red">Training Specialist</span></h5>
+  <h5><span class="red">Project Manager, Data Analyst, &amp; Training Specialist</span></h5>
   <div class="multi"><p>Ocean waterways and coral reefs are an integral part of life in South Florida. To combat the coral reef degradation, the project creates and deploys artificial reef components designed for the specifics of the South Florida environment. The reef ball imitates the appearance and function of natural coral reefs and provides a stable environment for corals and other marine life. </p><p>As a result, the area will experience an increase in fish population and healthier waterways. Stakeholder (including regulatory agency) needs assessments were conducted and results were incorporated in the project plan.  Project budget requirements led to grant application and donation solicitation efforts. Communications planning supported community awareness and stakeholder reporting requirements. </p><p>Ultimately over 30 reef balls were created and deployed in the initial deployment. Technical documentation, training agendas and curriculum, deployment reports and coral growth data collection and analysis tools were provided to various agencies for ongoing monitoring and maintenance.</p></div>
 <br>
 <br>
@@ -624,7 +412,7 @@ The coral is dying. We can fix this with a few changes in daily habits and focus
 <br>
 <br>
   <h2>P3.2 <br><span class="darken">Education </span></h2>
-  <h5><span class="red">Project Manager</span>, <span class="red">Technical Writer</span>, Data Analyst, &amp; <span class="red">Training Specialist</span></h5>
+  <h5><span class="red">Project Manager, Technical Writer, &amp; Training Specialist</span></h5>
   <div class="multi"><p>The project is the development and presentation of community coral reef education opportunities. Community participants study the current state of the ocean and reef environment, the effects of human interaction with the environment, and what can be done to restore and revitalize the natural habitats. They learn how humans can stop the damage and help restore the natural habitat. </p><p>Project objectives included the identification and coordination of community agencies and organizations to support the goal of improving the environment through education, organizing the location logistics of the opportunity, managing the communication efforts, and ensuring the materials required are available for the presentations. Event outcome reports were developed and delivered to grant managers and other stakeholders.  Community agencies received event documentation and lessons learned to support future presentations and events.</p></div>
 
 <br>
@@ -652,7 +440,7 @@ The coral is dying. We can fix this with a few changes in daily habits and focus
 <br>
 <br>
   <h2>P3.3 <br><span class="darken">Creating A Company</span></h2>
-  <h5><span class="red">Project Manager</span>, <span class="red">Technical Writer</span>, <span class="red">Data Analyst</span>, &amp; <span class="red">Training Specialist</span></h5>
+  <h5><span class="red">Project Manager, Technical Writer, Data Analyst, &amp; Training Specialist</span></h5>
   <div class="multi"><p>As my commitment to coral reef preservation and restoration grew, the need for a coordination and formalization of efforts became apparent. Creative ideas and project opportunities were abundant. Sponsors and other stakeholders needed a name, an entity, they could reference in their outreach efforts. 
     </p><p>
 The project to establish a company was a natural extension of the programs, projects, and resources already developed and presented. Operation Reef Ball continues my original mission to provide low or no-cost resources for community awareness and coral reef restoration efforts. </p><p>The project plan included: develop the corporate identity; (logo, communication templates, t-shirt design for event participants) initialize a presentation and resource repository; establish a coordinated social media presence; and create a primary program persona / character for communications. The six-month project engaged stakeholders to define needs, required the management of human and other resources, and involved significant planning to ensure all aspects of the project were successfully addressed, on time, and within budget.</p><p> As a result, Operation Reef Ball is preserving our water resources through education and a little bit of concrete!</p></div>
@@ -691,22 +479,11 @@ RebeccaNSchultz at gmail dot com</p>
 <span  class="gap">&nbsp;</span>
 <span  class="gap">&nbsp;</span>
 
- <footer>Last update: 20181029</footer>
+<footer>Last update: 20181111.1111</footer>
 
 </div>  <!-- end wrapper -->
 
-<script>
-  function toggle() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") 
-      x.className += " responsive";
-    else 
-      x.className = "topnav";
-  }
-  function toggleOff() {
-    var x = document.getElementById("myTopnav");
-      x.className = "topnav";
-  }
-</script>
+<script type="text/javascript" src="script.js"></script>
+
 </body>
 </html>
