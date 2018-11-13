@@ -72,6 +72,21 @@ img {
 }
 
 /* media overrides */
+@media screen and (min-width: 424px ) {
+  .slider {
+      width: 394px;
+  }
+  .frame {
+      width: 344px;
+  }
+  .frame li {
+      height: 172px;
+    }
+  .simple > .frame li {
+    width: 344px;
+  }
+}
+
 @media screen and (min-width: 550px ) {
   .slider {
       width: 550px;
@@ -84,6 +99,21 @@ img {
     }
   .simple > .frame li {
     width: 500px;
+  }
+}
+
+@media screen and (min-width: 753px ) {
+  .slider {
+    width: 722px;
+  }
+  .frame {
+    width: 672px;
+  }
+  .frame li {
+    height: 336px;
+    }
+  .simple > .frame li {
+    width: 672px;
   }
 }
 
