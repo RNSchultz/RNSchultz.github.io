@@ -1,12 +1,5 @@
-/* "min" */
-.slider {}
-
-.frame {
-  width: 1000px;
-
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
+ul {
+  padding-left: 0;
 }
 
 .slides {
@@ -16,9 +9,6 @@
 li {
   position: relative;
   display: inline-block;
-
-
-  width: 1000px;
 }
 
 .prev, .next {
@@ -30,7 +20,7 @@ li {
 }
 
 .next {
-  right: 0;
+  right: -25px;
 }
 
 .prev {
@@ -41,10 +31,8 @@ li {
   width: 25px;
 }
 
-/* added */
 .slider {
   position: relative;
-  width: 320px;
   margin-left: -25px;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -55,130 +43,13 @@ li {
 }
 .frame {
   position: relative;
-  width: 270px;
-  margin: 0 auto;
+  margin-left: 25px;
   font-size: 0;
   overflow: hidden;
   white-space: nowrap;
 }
-.simple > .frame li {
-  width: 270px;
-}
-.frame li {
-  height: 135px;
-}
-img {
-  height: 100%;
-}
 
-/* media overrides */
-@media screen and (min-width: 424px ) {
-  .slider {
-      width: 394px;
-  }
-  .frame {
-      width: 344px;
-  }
-  .frame li {
-      height: 172px;
-    }
-  .simple > .frame li {
-    width: 344px;
-  }
-}
-
-@media screen and (min-width: 550px ) {
-  .slider {
-      width: 550px;
-  }
-  .frame {
-      width: 500px;
-  }
-  .frame li {
-      height: 250px;
-    }
-  .simple > .frame li {
-    width: 500px;
-  }
-}
-
-@media screen and (min-width: 753px ) {
-  .slider {
-    width: 722px;
-  }
-  .frame {
-    width: 672px;
-  }
-  .frame li {
-    height: 336px;
-    }
-  .simple > .frame li {
-    width: 672px;
-  }
-}
-
-@media screen and (min-width: 768px ) {
-  .slider {
-    width: 722px;
-  }
-  .frame {
-    width: 672px;
-  }
-  .frame li {
-    height: 336px;
-    }
-  .simple > .frame li {
-    width: 672px;
-  }
-}
-
-
-@media screen and (min-width: 817px ) {
-  .slider {
-    width: 800px;
-  }
-  .frame {
-    width: 750px;
-  }
-  .frame li {
-    height: 375px;
-    }
-  .simple > .frame li {
-    width: 750px;
-  }
-}
-
-@media screen and (min-width: 1024px ) {
-  .slider {
-    width: 977px;
-  }
-  .frame {
-    width: 927px;
-  }
-  .frame li {
-    height: 464px;
-    }
-  .simple > .frame li {
-    width: 927px;
-  }
-}
-
-@media screen and (min-width: 1067px ) {
-  .slider {
-    width: 1050px;
-  }
-  .frame {
-    width: 1000px;
-  }
-  .frame li {
-    height: 500px;
-  }
-  .simple > .frame li {
-    width: 1000px;
-  }
-}
 .cap {
   padding-top: 10px;
-  margin-left: 25px;
   font-size: .8em;
 }
