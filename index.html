@@ -9,21 +9,10 @@
 <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet"> 
 <title>Rebecca N. Schultz | Project Manager </title>
 <link href="style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="lory.css" />
 </head>
 <body id="home">
 
-  <div class="topnav" id="myTopnav">
-    <a href="#home" class="nf active" onclick="toggleOff()">Rebecca N. Schultz</a>
-    <div class="r">
-      <a href="#about" style="padding-right:16px;padding-left:16px;" onclick="toggleOff()">About</a>
-      <a href="#portfolio" onclick="toggleOff()" style="padding-right:16px;padding-left:16px;">Portfolio</a>
-      <a href="#contact" style="padding-left:16px;" onclick="toggleOff()">Contact</a>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="toggle()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-  
 <div class="masthead">&nbsp;
 </div>
 
@@ -219,6 +208,7 @@ Presidents Volunteer Service Award<br>
   
 <span id="airline" class="gap">&nbsp;</span>
 <hr>
+<img src="imgs/P1-cover.jpg" alt="image of jet">
 <h1>01 <br>Airline Tech</h1>
   <div class="multi"><p>For years, a system existed, paper documents are filed in a certain way, with signatures required in a specific order. Forms were torn apart, leaving missing pages and barely legible notes on the change request.
 </p><p>
@@ -241,6 +231,9 @@ The following four projects showcase my project management, technical writing sk
   <div class="multi"><p>The technical writing department was set up as individual users with single use copies of the publishing software with no version control management. The inconsistent system versions made it difficult if not impossible to share documents between technical writers. This represented a significant risk as these documents could only be accessed and maintained by the individual who had the correct version on their computer. In addition, it would take IT longer to identify any issues as they had to look at a specific environment rather than a standardized one.</p>
 <p>A 30 day project plan was developed to implement the standardized publishing system across the technical writing department. Budget and cost management plan was established. Contracts for the software had to be initiated and executed. Effective management of IT resources was necessary to implement new software systems and address individual system constraints. Following implementation, stakeholders were trained on a consistent system and upgrading their documents to the new system format. System maintenance was transferred to IT and utilization was maintained by the technical writing department.</p>
 </div>
+<br>
+<br>
+<img src="imgs/P1-1a.jpg" alt="image of team agreement">
 <br>
 <br>
 <br>
@@ -276,7 +269,7 @@ This four-month project plan includes meeting with and obtaining information fro
 <br>
 <br>
 <figure>
-  <img src="imgs/mobile.png" alt="image of an mobile app">
+  <img src="imgs/mobile.jpg" alt="image of an mobile app">
   <figcaption>Mobile migration app - safety forms</figcaption>
 </figure>
 <br>
@@ -289,6 +282,7 @@ This four-month project plan includes meeting with and obtaining information fro
 
 <span id="wildlife" class="gap">&nbsp;</span>
 <hr>
+<img src="imgs/P2-cover.jpg" alt="image of owl eyes">
 <h1>02 <br>Wildlife Care</h1>
 <div class="multi">
 <p>Funds are necessary to feed critters. The wildlife organization feeds 7000 variations of hungry and injured, winged, crawling, slithering, and scaly. The sheer volume of water needed to house a restoration and bathing tank could fill a swimming pool in a few hours.
@@ -311,7 +305,7 @@ The third method I proposed was to create an online presence to raise awareness 
 </div>
 <br>
 <br>
-<img src="imgs/owl.png" alt="image of ambassador owl on shoulder of handler">
+<img src="imgs/owl.jpg" alt="image of ambassador owl on shoulder of handler">
 <br>
 <br>
 <br>
@@ -344,16 +338,25 @@ Following the successful event, the location was returned to its original condit
   </p></div>
 <br>
 <br>
-<img src="imgs/sale01.jpg" alt="image of crowd waiting in line">
-<br>
-<br>
-<img src="imgs/sale02.jpg" alt="image of interior warehouse sale with items organized on tables">
-<br>
-<br>
-<img src="imgs/sale02a.jpg" alt="image of crowd attending warehouse sale">
-<br>
-<br>
-<img src="imgs/sale03.jpg" alt="image of additional items for sale">
+<div class="slider simple" id="simple1">
+  <div class="frame js_frame">
+    <ul class="slides js_slides">
+      <li class="js_slide"><img src="imgs/sale01.jpg" draggable="false" alt="image of crowd waiting in line"></li>
+      <li class="js_slide"><img src="imgs/sale03.jpg" draggable="false" alt="image of additional items for sale"></li>
+      <li class="js_slide"><img src="imgs/sale02.jpg" draggable="false" alt="image of interior warehouse sale with items organized on tables"></li>
+      <li class="js_slide"><img src="imgs/sale02a.jpg" draggable="false" alt="image of crowd attending warehouse sale"></li>
+    </ul>
+  </div>
+
+  <span class="js_prev prev">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#cccccc" d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"/></g></svg>
+  </span>
+
+  <span class="js_next next">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#cccccc" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/></g></svg>
+  </span>
+  <p class="cap">View slideshow of indoor garage sale event</p>
+</div>
 <br>
 <br>
 <br>
@@ -376,6 +379,7 @@ Following implementation, stakeholders were trained on the two donation programs
 <br>
 <span id="coral" class="gap">&nbsp;</span>
 <hr>
+<img src="imgs/P3-cover.jpg" alt="image of reef ball">
 <h1>03 <br>Coral Revival</h1>
   <div class="multi"><p>Imagine life without coral. All the fish in the sea would need scuba gear to breathe. Coral is not just colorful under water plants. Corals are animals bringing shelter and more to the environment. And they are dying. What once was a vast array of vibrant hues, breath taking and voluminous gardens of the sea, are now seemingly burned from the sunlight, bleached, stripped of life. The question I had was why. And better yet, what can be done to fix it, restoring the patterns void below the ocean’s surface.
 </p><p>
@@ -398,16 +402,26 @@ The coral is dying. We can fix this with a few changes in daily habits and focus
   <div class="multi"><p>Ocean waterways and coral reefs are an integral part of life in South Florida. To combat the coral reef degradation, the project creates and deploys artificial reef components designed for the specifics of the South Florida environment. The reef ball imitates the appearance and function of natural coral reefs and provides a stable environment for corals and other marine life. </p><p>As a result, the area will experience an increase in fish population and healthier waterways. Stakeholder (including regulatory agency) needs assessments were conducted and results were incorporated in the project plan.  Project budget requirements led to grant application and donation solicitation efforts. Communications planning supported community awareness and stakeholder reporting requirements. </p><p>Ultimately over 30 reef balls were created and deployed in the initial deployment. Technical documentation, training agendas and curriculum, deployment reports and coral growth data collection and analysis tools were provided to various agencies for ongoing monitoring and maintenance.</p></div>
 <br>
 <br>
-<img src="imgs/P3-1a.jpg" alt="image of reef ball preparation">
-<br>
-<br>
-<img src="imgs/P3-1b.jpg" alt="image of reef ball lifting">
-<br>
-<br>
-<img src="imgs/P3-1d.png" alt="image of reef balls and diver under water">
-<br>
-<br>
-<img src="imgs/P3-1e.jpg" alt="image of reef ball and diver">
+<div class="slider simple" id="simple2">
+  <div class="frame js_frame">
+    <ul class="slides js_slides">
+      <li class="js_slide"><img src="imgs/deploy1.jpg" draggable="false" alt="image of reef ball preparation"></li>
+      <li class="js_slide"><img src="imgs/deploy2.jpg" draggable="false" alt="image of reef ball lifting"></li>
+      <li class="js_slide"><img src="imgs/deploy3.jpg" draggable="false" alt="image of ship deployment"></li>
+      <li class="js_slide"><img src="imgs/deploy4.jpg" draggable="false" alt="image of reef balls and diver under water"></li>
+      <li class="js_slide"><img src="imgs/deploy5.jpg" draggable="false" alt="image of reef ball and diver"></li>
+    </ul>
+  </div>
+
+  <span class="js_prev prev">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#cccccc" d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"/></g></svg>
+  </span>
+
+  <span class="js_next next">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#cccccc" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/></g></svg>
+  </span>
+  <p class="cap">View slideshow of reef ball deployment event</p>
+</div>
 <br>
 <br>
 <br>
@@ -432,14 +446,17 @@ The coral is dying. We can fix this with a few changes in daily habits and focus
 <img src="imgs/workbook03.jpg" alt="image of workbook interior page">
 <br>
 <br>
-<img src="imgs/seaTreasures01.png" alt="image of story book cover">
+<img src="imgs/seaTreasures01.jpg" alt="image of story book cover">
 <br>
 <br>
-<img src="imgs/seaTreasures02.png" alt="image of story book detail">
+<img src="imgs/seaTreasures02.jpg" alt="image of story book inside">
+<br>
+<br>
+<img src="imgs/seaTreasures03.jpg" alt="image of story book back">
 <br>
 <br>
 <br>
-  <h2>P3.3 <br><span class="darken">Creating A Company</span></h2>
+  <h2>P3.3 <br><span class="darken">Social Entrepreneurship</span></h2>
   <h5><span class="red">Project Manager, Technical Writer, Data Analyst, &amp; Training Specialist</span></h5>
   <div class="multi"><p>As my commitment to coral reef preservation and restoration grew, the need for a coordination and formalization of efforts became apparent. Creative ideas and project opportunities were abundant. Sponsors and other stakeholders needed a name, an entity, they could reference in their outreach efforts. 
     </p><p>
@@ -482,8 +499,34 @@ RebeccaNSchultz at gmail dot com</p>
 <footer>Last update: 20181111.1111</footer>
 
 </div>  <!-- end wrapper -->
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="nf active" onclick="toggleOff()">Rebecca N. Schultz</a>
+    <div class="r">
+      <a href="#about" style="padding-right:16px;padding-left:16px;" onclick="toggleOff()">About</a>
+      <a href="#portfolio" onclick="toggleOff()" style="padding-right:16px;padding-left:16px;">Portfolio</a>
+      <a href="#contact" style="padding-left:16px;" onclick="toggleOff()">Contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="toggle()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
 
 <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="lory.min.js"></script>
+<script>
+  'use strict';
+  document.addEventListener('DOMContentLoaded', function () {
+    lory(simple1, {
+        infinite: 1,
+        enableMouseEvents: true
+    });
+    lory(simple2, {
+        infinite: 1,
+        enableMouseEvents: true
+    });
+  });
+</script>
 
 </body>
 </html>

@@ -19,7 +19,7 @@
     margin: 40px auto;
     padding: 10px 40px;
     background-color: #f4f4f4;
-    max-width: 1024px;
+    max-width: 1000px;
   }
   h1 {
     font-size: 32px;
@@ -125,6 +125,7 @@
     top: 0;
     min-width: auto;
     width: 100%;
+    z-index: 1000;
   }
 
   .topnav a {
