@@ -3,7 +3,7 @@ ul {
 }
 
 .slides {
-  display: inline-block;
+  display: block;
 }
 
 li {
