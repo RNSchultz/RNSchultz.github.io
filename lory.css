@@ -9,6 +9,7 @@ ul {
 li {
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 
 .prev, .next {
