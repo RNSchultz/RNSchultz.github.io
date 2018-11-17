@@ -147,7 +147,9 @@
     font-size: 1.2em;
   }
   @media screen and (min-width: 340px) {
-    font-size: 1.5em;
+    .topnav a {
+      font-size: 1.5em;
+    }
   }
   .topnav .r {
       float: right;
