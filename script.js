@@ -1,6 +1,6 @@
 var _info_ = {
   Version   : "1.0.0",
-  Author    : "Alyce Hoggan and James Dunn",
+  Author    : "Motivara Corporation",
   Copyright : "Motivara Corporation",
   Source    : "github.com/RNSchultz/RNSchultz.github.io"
 };
